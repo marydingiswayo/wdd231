@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>WDD231 • Course Home</title>
+  <meta name="description" content="Course home page showcasing navigation, responsive layout, and dynamic course filtering.">
+  <meta name="author" content="Mary Dingiswayo">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+
+  <!-- CSS (normalize optional) -->
+  <link href="styles/small.css" rel="stylesheet">
+  <link href="styles/large.css" rel="stylesheet">
+
+  <!-- JS (defer) -->
+  <script src="script/navigation.js" defer></script>
+  <script src="script/date.js" defer></script>
+  <script src="script/home.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="images/byu.webp" alt="Site logo" width="100" height="100">
+      <span class="owner">Mary Dingiswayo</span>
+    </div>
+    <button id="menu" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav id="nav" class="closed" aria-label="Primary">
+      <ul>
+        <li><a href="./">Home</a></li>
+        <li><a href="chamber_project/">Chamber</a></li>
+        <li><a href="final_project/">Final</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Home</h1>
+    <h2>About Me</h2>
+    <div class="about me">
+       <p>Hello am Mary Dingiswayo from Zimbabwe, l am enrolled at BYU-Pathway and am studying web development and programming, as a BYU Pathway Worldwide student studying web development and programming, l am building a strong foundation in both creative design and logical problem solving. Through courses like Web Fundamentals, Dynamic Web Fundamentals, and Programming with Classes, l am learning HTML, CSS, JavaScript, Python, and C#, while also practicing professional skills such as using GitHub and creating polished projects. Your journey blends technical growth with personal resilience, preparing me to showcase my Zimbabwean roots in your work and to step confidently into future opportunities in technology.</p>
+       <img src="images/profile.jpg" alt="My profile" width=200>
+    </div>
+    <section>
+      <h2> Web Certificate courses</h2>
+      <div class="filters">
+        <button data-filter="all">All</button>
+        <button data-filter="wdd231">WDD231</button>
+        <button data-filter="cse210">CSE</button>
+        <button data-filter="wdd130">WDD130</button>
+        <button data-filter="wdd131">WDD131</button>
+        <button data-filter="cse110">CSE</button>
+        <button data-filter="cse111">CSE</button>
+      </div>
+      <div id="courses" class="cards" aria-live="polite"></div>
+      <p class="credits">Total credits: <span id="creditTotal">0</span></p>
+    </section>
+
+    <section>
+      <h3>About</h3>
+      <p>Brief intro and goals for the term.</p>
+    </section>
+
+    <section>
+      <h3>Contact</h3>
+      <p>Links and ways to reach me.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p class="social">
+      <a href="https://github.com/yourgithubusername/wdd231"> <img src="images/github.webp" alt="GitHub" width="70"></a> ·
+      <a href="https://www.linkedin.com/in/yourprofile"> <img src="images/linkedin.webp" alt="LinkedIn" width="70"></a>
+    </p>
+    <p>&copy; <span id="year"></span> Mary Dingiswayo • Zimbabwe | Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>

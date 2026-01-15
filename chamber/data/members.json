@@ -1,0 +1,99 @@
+[
+  {
+    "id": 1,
+    "name": "Smith & Sons Hardware",
+    "address": "456 Oak Street, Anytown, AT 12345",
+    "phone": "(555) 234-5678",
+    "website": "https://ww.ssdhardware.com",
+    "image": "smith-hardware.jpg",
+    "membership": "gold",
+    "category": "Retail",
+    "description": "Family-owned hardware store since 1985"
+  },
+  {
+    "id": 2,
+    "name": "Tech Innovations Inc.",
+    "address": "789 Tech Park, Anytown, AT 12345",
+    "phone": "(555) 345-6789",
+    "website": "https://techinnovations.com",
+    "image": "tech-innovations.jpg",
+    "membership": "gold",
+    "category": "Technology",
+    "description": "Leading software development company"
+  },
+  {
+    "id": 3,
+    "name": "Green Thumb Nursery",
+    "address": "321 Garden Lane, Anytown, AT 12345",
+    "phone": "(555) 456-7890",
+    "website": "https://greenthumb.com",
+    "image": "green-thumb.jpg",
+    "membership": "silver",
+    "category": "Agriculture",
+    "description": "Plants, trees, and garden supplies"
+  },
+  {
+    "id": 4,
+    "name": "Main Street Cafe",
+    "address": "101 Main Street, Anytown, AT 12345",
+    "phone": "(555) 567-8901",
+    "website": "https://mainstreetcafe.com",
+    "image": "main-street-cafe.jpg",
+    "membership": "bronze",
+    "category": "Food & Beverage",
+    "description": "Cozy cafe with homemade pastries"
+  },
+  {
+    "id": 5,
+    "name": "FitLife Gym",
+    "address": "222 Fitness Ave, Anytown, AT 12345",
+    "phone": "(555) 678-9012",
+    "website": "https://fitlife.com",
+    "image": "fitlife-gym.jpg",
+    "membership": "gold",
+    "category": "Fitness",
+    "description": "24/7 gym with personal trainers"
+  },
+  {
+    "id": 6,
+    "name": "Pioneer Bank",
+    "address": "333 Financial Blvd, Anytown, AT 12345",
+    "phone": "(555) 789-0123",
+    "website": "https://pioneerbank.com",
+    "image": "pioneer-bank.jpg",
+    "membership": "gold",
+    "category": "Finance",
+    "description": "Local community banking services"
+  },
+  {
+    "id": 7,
+    "name": "Sunshine Daycare",
+    "address": "444 Childcare Road, Anytown, AT 12345",
+    "phone": "(555) 890-1234",
+    "website": "https://sunshinedaycare.com",
+    "image": "sunshine-daycare.jpg",
+    "membership": "silver",
+    "category": "Education",
+    "description": "Safe and nurturing childcare"
+  },
+  {
+    "id": 8,
+    "name": "AutoCare Pro",
+    "address": "555 Mechanic Street, Anytown, AT 12345",
+    "phone": "(555) 901-2345",
+    "website": "https://autocare.com",
+    "image": "autocare-pro.jpg",
+    "membership": "bronze",
+    "category": "Automotive",
+    "description": "Professional auto repair services"
+  },
+  {
+    "name": "Green Garden Center",
+    "address": "789 Garden Lane",
+    "phone": "(+263) 456-7890",
+    "website": "https://gardencente.com",
+    "image": "garden.jpg",
+    "membership": "bronze",
+    "category": "Home & Garden"
+  }
+]

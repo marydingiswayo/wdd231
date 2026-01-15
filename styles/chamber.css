@@ -1,0 +1,63 @@
+/* Reset/normalize styles can be added here if needed */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+}
+
+header {
+  background: #004d40;
+  color: white;
+  padding: 1rem;
+}
+
+nav {
+  margin-top: 0.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a.active {
+  text-decoration: underline;
+}
+
+.view-toggle {
+  margin: 1rem 0;
+}
+
+#members.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+#members.list {
+  display: block;
+}
+
+.member-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background: #f9f9f9;
+}
+
+.member-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.member-list {
+  border-bottom: 1px solid #ccc;
+  padding: 0.5rem;
+}

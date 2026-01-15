@@ -1,0 +1,14 @@
+/* styles/larger.css */
+@media (min-width: 48rem) {
+  #menu { display:none; }
+  nav.closed { display:block; }
+  nav ul { display:flex; gap:.5rem; }
+
+  .cards { grid-template-columns: repeat(3, 1fr); }
+
+}
+.profile-pic {
+  float: right;
+  margin-left: 15px;
+}
+footer {background-color: #2ca34a; }
