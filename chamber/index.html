@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="San Miguel Chamber of Commerce - Promoting local businesses and economic development">
+    <title>San Miguel Chamber of Commerce</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 768px)">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- OpenWeatherMap API (Add your API key) -->
+    <script src="https://api.openweathermap.org/data/2.5/forecast?lat=13.4833&lon=-88.1833&units=imperial&appid=YOUR_API_KEY_HERE"></script>
+</head>
+<body>
+    <!-- Skip to Content Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/chamber-logo.jpg" alt="San Miguel Chamber of Commerce Logo" width="150" height="100">
+                    <span class="logo-text">San Miguel<br>Chamber of Commerce</span>
+                </a>
+            </div>
+            
+            <!-- Navigation -->
+            <nav class="main-nav" aria-label="Main navigation">
+                <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav">
+                    <span class="sr-only">Menu</span>
+                    <span class="hamburger"></span>
+                </button>
+                
+                <ul id="primary-nav" class="nav-list">
+                    <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero" aria-label="Hero section">
+            <picture>
+                <source media="(max-width: 767px)" srcset="images/hero-small.webp">
+                <source media="(min-width: 768px)" srcset="images/hero-large.webp">
+                <img src="images/hero.webp" alt="San Miguel city skyline and businesses" width="1600" height="600">
+            </picture>
+            <div class="hero-content">
+                <h1>Welcome to San Miguel Chamber of Commerce</h1>
+                <p>Connecting businesses, driving growth, and building community since 1950.</p>
+                <a href="join.html" class="cta-button" aria-label="Join the Chamber of Commerce">Join Now</a>
+            </div>
+        </section>
+
+        <!-- Current Events Section -->
+        <section class="events" aria-label="Current events">
+            <div class="container">
+                <h2>Current Events</h2>
+                <div class="events-grid">
+                    <article class="event-card">
+                        <h3>Business Networking Breakfast</h3>
+                        <p><strong>Date:</strong> January 30, 2024</p>
+                        <p><strong>Time:</strong> 8:00 AM - 10:00 AM</p>
+                        <p>Join local business owners for networking and breakfast at Hotel Tesoro.</p>
+                        <a href="#" class="event-link">Register Now</a>
+                    </article>
+                    
+                    <article class="event-card">
+                        <h3>Economic Development Seminar</h3>
+                        <p><strong>Date:</strong> February 5, 2024</p>
+                        <p><strong>Time:</strong> 2:00 PM - 4:00 PM</p>
+                        <p>Learn about new economic opportunities in the San Miguel region.</p>
+                        <a href="#" class="event-link">Learn More</a>
+                    </article>
+                    
+                    <article class="event-card">
+                        <h3>Small Business Workshop</h3>
+                        <p><strong>Date:</strong> February 12, 2024</p>
+                        <p><strong>Time:</strong> 6:00 PM - 8:00 PM</p>
+                        <p>Digital marketing strategies for local businesses.</p>
+                        <a href="#" class="event-link">Sign Up</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Weather Section -->
+        <section class="weather" aria-label="Weather forecast">
+            <div class="container">
+                <h2>Local Weather</h2>
+                <div class="weather-content">
+                    <div class="current-weather">
+                        <h3>Current Conditions</h3>
+                        <div id="current-temp">Loading...</div>
+                        <div id="weather-desc">Loading...</div>
+                        <div id="weather-icon"></div>
+                    </div>
+                    
+                    <div class="forecast">
+                        <h3>3-Day Forecast</h3>
+                        <div id="forecast-container" class="forecast-grid">
+                            <!-- Forecast will be dynamically loaded -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Company Spotlight Section -->
+        <section class="spotlight" aria-label="Company spotlight">
+            <div class="container">
+                <h2>Featured Members</h2>
+                <div id="spotlight-container" class="spotlight-grid">
+                    <!-- Companies will be dynamically loaded from JSON -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <div class="footer-logo">
+                    <img src="images/chamber-logo - Copy.jpg" alt="San Miguel Chamber of Commerce Logo" width="100" height="100">
+                    <h3>San Miguel Chamber of Commerce</h3>
+                </div>
+                <address>
+                    <p>123 Commerce Street<br>
+                    San Miguel, El Salvador</p>
+                    <p><a href="tel:+50312345678">(503) 1234-5678</a></p>
+                    <p><a href="mailto:info@sanmiguelchamber.org">info@sanmiguelchamber.org</a></p>
+                </address>
+            </div>
+            
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><img src="images/facebook.webp" alt="Facebook icon" width="32" height="32"></a>
+                    <a href="#" aria-label="Twitter"><img src="images/twitter.svg" alt="Twitter icon" width="32" height="32"></a>
+                    <a href="#" aria-label="LinkedIn"><img src="images/linkedin.webp" alt="LinkedIn icon" width="32" height="32"></a>
+                    <a href="#" aria-label="Instagram"><img src="images/instagram.webp" alt="Instagram icon" width="32" height="32"></a>
+                </div>
+            </div>
+            
+            <div class="footer-meta">
+                <p>&copy; <span id="current-year">2024</span> San Miguel Chamber of Commerce. All rights reserved.</p>
+                <p>WDD 231 - Chamber Home Page Project</p>
+                <p><a href="attributions.html">Attributions</a> | <a href="privacy.html">Privacy Policy</a></p>
+                <p class="last-modified">Last Modified: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/spotlight.js"></script>
+</body>
+</html>

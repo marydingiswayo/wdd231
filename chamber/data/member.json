@@ -1,0 +1,37 @@
+    [    {
+            "name": "Tesoro Hotel",
+            "address": "123 Main Street, San Miguel",
+            "phone": "(503) 1234-5678",
+            "website": "https://hoteltesoro.com",
+            "image": "images/tesoro-hotel.jpg",
+            "membership": "gold",
+            "description": "Luxury accommodations and event venue"
+        },
+        {
+            "name": "El Roble Restaurant",
+            "address": "456 Commerce Ave, San Miguel",
+            "phone": "(503) 9876-5432",
+            "website": "https://elroble.com",
+            "image": "images/el-roble.jpg",
+            "membership": "silver",
+            "description": "Traditional Salvadoran cuisine"
+        },
+        {
+            "name": "San Miguel Textiles",
+            "address": "789 Industrial Blvd, San Miguel",
+            "phone": "(503) 4567-8901",
+            "website": "https://sanmigueltextiles.com",
+            "image": "images/textiles.jpg",
+            "membership": "gold",
+            "description": "Textile manufacturing and exports"
+        },
+        {
+            "name": "Café Aroma",
+            "address": "321 Market Street, San Miguel",
+            "phone": "(503) 2345-6789",
+            "website": "https://cafearoma.com",
+            "image": "images/cafe-aroma.jpg",
+            "membership": "silver",
+            "description": "Premium coffee roastery"
+        }
+    ]
