@@ -2,10 +2,7 @@
 
 :root {
     /* Color Palette - AA Compliant */
-    --primary-color: #0056b3;
-    --secondary-color: #ff6b35;
-    --dark-color: #6507ca;
-    --text-color: #333;
+   
     --text-light: #666;
     --border-color: #dee2e6;
     --success-color: #28a745;
@@ -109,10 +106,6 @@
 
 .hamburger {
     display: block;
-    width: 24px;
-    height: 3px;
-    background-color: var(--dark-color);
-    position: relative;
     transition: var(--transition-normal);
 }
 
@@ -126,13 +119,6 @@
     transition: var(--transition-normal);
 }
 
-.hamburger::before {
-    top: -8px;
-}
-
-.hamburger::after {
-    bottom: -8px;
-}
 
 .nav-list {
     display: flex;
