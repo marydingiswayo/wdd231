@@ -10,7 +10,7 @@
      <!-- Open Graph meta tags for social sharing -->
     <meta property="og:title" content="Your Page Title Here">
     <meta property="og:description" content="Connecting and advocating for local businesses in Springfield. We provide networking, resources, and  collective voice to strengthen our community's economy.">
-    <meta property="og:image" content="https://yourwebsite.com/image.jpg">
+    <meta property="og:image" content=""">
     <meta property="og:url" content="https://yourwebsite.com/page-url">
     <meta property="og:type" content="website">
     
@@ -29,6 +29,7 @@
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/normalize.css">
      
     <script src="scripts/join.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -242,6 +243,20 @@
                                       placeholder="Briefly describe your business or organization..."></textarea>
                         </div>
                     </fieldset>
+                    <fieldset>
+                       <legend>Membership Level:</legend>
+                       <input type="radio" id="np" name="membership" value="np" required>
+                       <label for="np">NP (Non-Profit)</label><br>
+    
+                       <input type="radio" id="bronze" name="membership" value="bronze">
+                       <label for="bronze">Bronze</label><br>
+    
+                       <input type="radio" id="silver" name="membership" value="silver">
+                        <label for="silver">Silver</label><br>
+    
+                          <input type="radio" id="gold" name="membership" value="gold">
+                       <label for="gold">Gold</label>
+                    </fieldset>
 
                     <!-- Membership Selection -->
                     <fieldset class="form-section">
@@ -367,7 +382,7 @@
              <address>
                 📍123 Business Ave, Suite 100<br>
                   📍City, State 12345<br>
-                <a href="📞tel:+11234567890">(123) 456-7890</a>
+                <a href="tel-11234567890">(123) 456-7890</a>
              </address>
         </div>
             <div class="social-media">
@@ -385,6 +400,5 @@
         </div>
     </footer>
 
-    <script src="scripts/join.js" defer></script>
 </body>
 </html>
