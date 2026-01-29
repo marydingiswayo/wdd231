@@ -11,6 +11,12 @@
     --bronze-color: #cd7f32;
     --silver-color:#7A7A7A ;
     --gold-color:#B8860B;
+    --primary-color: #003d7a; /* Darker blue for better contrast */
+    --secondary-color: #1a7a3a; /* Darker green */
+    --accent-color: #d4a017; /* Darker gold/yellow */
+    --light-color: #f5f7fa;
+    --dark-color: #1a1a1a;
+    --text-color: #333333;
     ;
     
     /* Spacing */
@@ -105,7 +111,6 @@
 }
 
 .hamburger {
-    display: block;
     transition: var(--transition-normal);
 }
 
