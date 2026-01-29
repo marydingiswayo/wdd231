@@ -1,16 +1,10 @@
 /* Reset & Base Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 :root {
     /* Color Palette - AA Compliant */
     --primary-color: #0056b3;
     --secondary-color: #ff6b35;
     --dark-color: #6507ca;
-    --light-color: #f8f9fa;
     --text-color: #333;
     --text-light: #666;
     --border-color: #dee2e6;
@@ -54,18 +48,8 @@
     --transition-slow: 500ms ease;
 }
 
-body {
-    font-family: var(--font-primary);
-    line-height: 1.6;
-    color: var(--text-color);
-    background-color: var(--light-color);
-}
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 var(--spacing-md);
-}
+
 
 /* Skip Link */
 .skip-link {
