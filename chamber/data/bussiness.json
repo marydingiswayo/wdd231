@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Mountain View Restaurant",
+        "address": "123 Main Street, Our City",
+        "description": "Fine dining with panoramic mountain views. Specializing in local cuisine and fresh ingredients from nearby farms.",
+        "image": "business1.webp",
+        "category": "Dining"
+    },
+    {
+        "name": "Tech Innovations Inc.",
+        "address": "456 Tech Avenue, Our City",
+        "description": "Leading software development company providing custom solutions for businesses of all sizes.",
+        "image": "business2.webp",
+        "category": "Technology"
+    },
+    {
+        "name": "Green Valley Farmers Market",
+        "address": "789 Farm Road, Our City",
+        "description": "Fresh produce, local artisans, and community events every weekend. Supporting local agriculture since 1995.",
+        "image": "business3.webp",
+        "category": "Retail"
+    },
+    {
+        "name": "Summit Outdoor Gear",
+        "address": "321 Adventure Lane, Our City",
+        "description": "Your one-stop shop for hiking, camping, and outdoor equipment. Expert advice and quality gear.",
+        "image": "business4.webp",
+        "category": "Retail"
+    },
+    {
+        "name": "Community Health Center",
+        "address": "654 Wellness Way, Our City",
+        "description": "Comprehensive healthcare services for the entire family. Accepting most insurance plans.",
+        "image": "business5.webp",
+        "category": "Healthcare"
+    },
+    {
+        "name": "Heritage Bank & Trust",
+        "address": "987 Financial Plaza, Our City",
+        "description": "Local banking with personal service. Checking, savings, loans, and investment services.",
+        "image": "business6.webp",
+        "category": "Finance"
+    },
+    {
+        "name": "Creative Minds Academy",
+        "address": "147 Education Drive, Our City",
+        "description": "Private school offering innovative education programs from preschool through 8th grade.",
+        "image": "business7.webp",
+        "category": "Education"
+    },
+    {
+        "name": "Precision Auto Repair",
+        "address": "258 Mechanic Street, Our City",
+        "description": "Trusted auto repair and maintenance for all makes and models. 30 years of experience.",
+        "image": "business8.webp",
+        "category": "Automotive"
+    }
+]
