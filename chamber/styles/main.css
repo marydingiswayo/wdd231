@@ -159,6 +159,14 @@ nav {
     margin-bottom: 1rem;
     color: white;
 }
+.hero-image {
+    margin: 2rem 0;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    max-width: 100%;
+    height: auto;
+     
+}
 
 .hero p {
     font-size: 1.2rem;
