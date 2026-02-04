@@ -1,12 +1,12 @@
 /* Base Styles and Reset */
 :root {
-    --primary-color: #2c3e50;
-    --secondary-color: #3498db;
-    --accent-color: #e74c3c;
-    --light-color: #ecf0f1;
-    --dark-color: #2c3e50;
+    --primary-color: #720ed7;
+    --secondary-color: #5120d6;
+    --accent-color: #1847ed;
+    --light-color: #ecf1ed;
+    --dark-color: #ad14ad;
     --text-color: #333;
-    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow: 0 4px 6px rgba(12, 64, 233, 0.1);
     --transition: all 0.3s ease;
 }
 
@@ -27,18 +27,14 @@ body {
 h1, h2, h3, h4 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    color: var(--primary-color);
 }
 
 a {
     text-decoration: none;
-    color: var(--secondary-color);
     transition: var(--transition);
 }
 
-a:hover {
-    color: var(--primary-color);
-}
+
 
 img {
     max-width: 100%;
@@ -121,7 +117,6 @@ nav {
 
 .nav-menu a:hover,
 .nav-menu a.active {
-    background-color: var(--secondary-color);
     color: white;
 }
 
@@ -135,7 +130,7 @@ nav {
     width: 30px;
     height: 30px;
     filter: brightness(0) invert(1);
-    transition: var(--transition);
+
 }
 
 .social img:hover {
@@ -144,8 +139,8 @@ nav {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.8)), 
-                url('../images/hero-discover.webp');
+    background: linear-gradient(rgba(113, 44, 198, 0.9), rgba(135, 25, 186, 0.8)), 
+                url('../hero-discover.webp') no-repeat center center/cover;
     background-size: cover;
     background-position: center;
     color: white;
@@ -251,7 +246,7 @@ footer {
 
 .footer-links p {
     margin-bottom: 0.5rem;
-    color: #ccc;
+    color: white;
 }
 
 /* Responsive Design */

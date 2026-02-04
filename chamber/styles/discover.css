@@ -26,7 +26,7 @@
 
 .info-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 12px rgba(46, 16, 216, 0.15);
 }
 
 .info-card h3 {
@@ -43,7 +43,6 @@
 }
 
 .info-card p:last-of-type {
-    color: #666;
     font-size: 0.9rem;
     line-height: 1.4;
 }
@@ -138,7 +137,6 @@
 }
 
 .business-address {
-    color: #666;
     font-size: 0.9rem;
     margin-bottom: 1rem;
     display: flex;
@@ -208,7 +206,7 @@
 
 .event-card p {
     margin-bottom: 0.5rem;
-    color: #666;
+    
     line-height: 1.4;
 }
 
