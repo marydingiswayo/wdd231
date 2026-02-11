@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Form Submission Confirmation">
+    <title>Book Finder | Form Submitted</title>
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-book-open"></i>
+                <h1>BookFinder</h1>
+            </div>
+            
+            <nav class="nav-desktop">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="books.html">Browse Books</a></li>
+                    <li><a href="favorites.html">Favorites</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <button class="hamburger" aria-label="Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            
+            <nav class="nav-mobile">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="books.html">Browse Books</a></li>
+                    <li><a href="favorites.html">Favorites</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="confirmation-section">
+            <div class="confirmation-card">
+                <i class="fas fa-check-circle success-icon"></i>
+                <h2>Message Received!</h2>
+                <p>Thank you for contacting us. We'll get back to you soon.</p>
+                
+                <div class="submitted-data" id="submittedData">
+                    <!-- Data will be displayed here via JavaScript -->
+                </div>
+                
+                <div class="confirmation-actions">
+                    <a href="index.html" class="btn btn-primary">Return Home</a>
+                    <a href="contact.html" class="btn btn-secondary">Send Another Message</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 BookFinder. All rights reserved.</p>
+            <p>Made with <i class="fas fa-heart"></i> for book lovers</p>
+            <p class="last-modified">Last Modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+
+    <!-- JavaScript to display form data from URL -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const submittedData = document.getElementById('submittedData');
+            
+            if (urlParams.toString()) {
+                let html = '<h3>Your Submitted Information:</h3><ul>';
+                
+                for (const [key, value] of urlParams.entries()) {
+                    const formattedKey = key.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase());
+                    html += `<li><strong>${formattedKey}:</strong> ${decodeURIComponent(value)}</li>`;
+                }
+                
+                html += '</ul>';
+                submittedData.innerHTML = html;
+            } else {
+                submittedData.innerHTML = '<p>No form data submitted. <a href="contact.html">Go back to contact form</a></p>';
+            }
+        });
+    </script>
+</body>
+</html>

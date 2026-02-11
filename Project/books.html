@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse our collection of books">
+    <title>Book Finder | Browse Books</title>
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-book-open"></i>
+                <h1>BookFinder</h1>
+            </div>
+            
+            <nav class="nav-desktop">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="books.html" class="active">Browse Books</a></li>
+                    <li><a href="favorites.html">Favorites</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <button class="hamburger" aria-label="Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            
+            <nav class="nav-mobile">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="books.html" class="active">Browse Books</a></li>
+                    <li><a href="favorites.html">Favorites</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="books-header">
+            <h2>Browse Our Collection</h2>
+            <div class="search-filter">
+                <input type="text" id="searchInput" placeholder="Search books..." class="search-bar">
+                <select id="genreFilter" class="filter-select">
+                    <option value="">All Genres</option>
+                    <option value="Fiction">Fiction</option>
+                    <option value="Non-Fiction">Non-Fiction</option>
+                    <option value="Science Fiction">Science Fiction</option>
+                    <option value="Fantasy">Fantasy</option>
+                    <option value="Mystery">Mystery</option>
+                    <option value="Biography">Biography</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="books-grid" id="books-container">
+            <!-- Books will be loaded here via JavaScript -->
+            <div class="loading">Loading books...</div>
+        </section>
+
+        <div class="pagination" id="pagination">
+            <!-- Pagination will be added by JavaScript -->
+        </div>
+    </main>
+
+    <!-- Modal Dialog -->
+    <div class="modal" id="bookModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+           <div class="social-media">
+                <h3>Follow Us</h3>
+                <a href="#" aria-label="Facebook">📘</a>
+                <a href="#" aria-label="Twitter">🐦</a>
+                <a href="#" aria-label="LinkedIn">💼</a>
+            </div>
+
+        <div class="container">
+            <p>&copy; 2025 BookFinder. All rights reserved.</p>
+            <p>Made with <i class="fas fa-heart"></i> for book lovers</p>
+            <p class="last-modified">Last Modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script type="module" src="scripts/books.js"></script>
+    <script type="module" src="scripts/modal.js"></script>
+</body>
+</html>

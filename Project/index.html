@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book Finder - Discover your next favorite read">
+    <title>Book Finder | Home</title>
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- JavaScript -->
+    <script type="module" src="scripts/main.js"></script>
+    <script type="module" src="scripts/modal.js"></script>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-book-open"></i>
+                <h1>BookFinder</h1>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <nav class="nav-desktop">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="books.html">Browse Books</a></li>
+                    <li><a href="favorites.html">Favorites</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Mobile Hamburger Menu -->
+            <button class="hamburger" aria-label="Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            
+            <!-- Mobile Navigation -->
+            <nav class="nav-mobile">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="books.html">Browse Books</a></li>
+                    <li><a href="favorites.html">Favorites</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Discover Your Next Favorite Read</h2>
+                <p>Explore thousands of books across all genres. Save your favorites and create your personal reading list.</p>
+                <a href="books.html" class="btn btn-primary">Browse Books</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Books on a shelf">
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Books Section -->
+    <main class="container">
+        <section class="featured-section">
+            <h2>Featured Books</h2>
+            <div class="featured-grid" id="featured-books">
+                <!-- JavaScript will populate this -->
+                <div class="loading">Loading featured books...</div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="feature-card">
+                <i class="fas fa-search"></i>
+                <h3>Easy Search</h3>
+                <p>Find books by title, author, or genre with our powerful search tool.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-heart"></i>
+                <h3>Save Favorites</h3>
+                <p>Bookmark your favorite books and access them anytime.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Mobile Friendly</h3>
+                <p>Access your reading list from any device, anywhere.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal Dialog -->
+    <div class="modal" id="bookModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-body">
+                <!-- Modal content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+           
+
+    <!-- Footer -->
+    <footer class="footer">
+           <div class="social-media">
+                <h3>Follow Us</h3>
+                <a href="#" aria-label="Facebook">📘</a>
+                <a href="#" aria-label="Twitter">🐦</a>
+                <a href="#" aria-label="LinkedIn">💼</a>
+            </div>
+            
+        <div class="container">
+            <p>&copy; 2025 BookFinder. All rights reserved.</p>
+            <p>Made with <i class="fas fa-heart"></i> for book lovers</p>
+            <p class="last-modified">Last Modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+
+    
+</body>
+</html>

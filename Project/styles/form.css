@@ -1,0 +1,142 @@
+@media (max-width: 600px) {
+  form {
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+}
+
+/* Base Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 2rem;
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* header, main, footer */
+  grid-template-columns: 1fr;        /* only one column */
+  min-height: 100vh; 
+}
+
+/* Form Container */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr; /* form itself is one column */
+  gap: 1rem;                  /* spacing between fields */
+}
+
+
+/* Headings */
+form h2 {
+  text-align: center;
+  color: #004080; /* AA-compliant with white background */
+  margin-bottom: 1.5rem;
+}
+
+/* Labels and Inputs */
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Required Field Indicator */
+label.required::after {
+  content: " *";
+  color: red;
+  font-weight: bold;
+}
+
+/* Radio Buttons / Checkboxes */
+input[type="radio"], input[type="checkbox"] {
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+/* Submit Button */
+button {
+  background-color: #0073e6;
+  color: #ffffff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005bb5;
+}
+
+/* Accessibility: Focus Styles */
+input:focus, select:focus, textarea:focus, button:focus {
+  outline: 2px solid #004080;
+  outline-offset: 2px;
+}
+
+
+/* Center the footer content */
+footer {
+  text-align: center;
+  color: white;
+  background-color: #0073e6;
+  grid-column: 1 / -1; /* span all columns (only one here) */
+}
+ 
+/* Strong, explicit centering */
+header h1 {
+  text-align: center;
+  margin: 1rem;              /* remove default h1 margins that can look off-center */
+  width: 100%;            /* ensure it spans the header */
+}
+/* Flex header */
+header {
+  justify-content: center;  /* horizontal */
+  align-items: center;       /* vertical (optional) */
+  place-items: center;       /* centers both axes */
+
+}
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  background-color: #0073e6;
+  text-align: center;
+}
+main {
+  margin: 20px;
+  bottom: 20px;
+  grid-column: 1 / -1; /* span all columns (only one here) */
+}
+.page-wrapper {
+  max-width: 800px;     /* controls the width of the whole column */
+  margin: 0 auto;       /* centers the column horizontally */
+  padding: 1rem;        /* optional spacing inside the wrapper */
+}
+
+h1, footer, form {
+  margin-bottom: 1rem;  /* spacing between sections */
+}
+
+
